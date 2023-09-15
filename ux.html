@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Two-Column Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .columns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: #6e1ded;
+        }
+
+        .column {
+            display: flex;
+            flex: 1;
+            max-width: 50%; /* Adjust as needed */
+        }
+        
+    .container {
+        max-width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+    }
+    
+    
+    .column {
+        max-width: 100%; /* Allow both columns to take up the full width */
+    }
+    .column img {
+        display: flex;
+        flex-wrap: wrap;
+            max-width: 100%;
+            height: 400px;
+        }
+        .column img {
+            width: 100%;
+            height: auto;
+        }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: left;
+        }
+
+        .button {
+            font-family:sans-serif;
+            background: #ae7bff;
+            color: #fff;
+            font-size: 17px;
+            text-transform: uppercase;
+            padding: 10px 0;
+            text-align: center;
+            line-height: 28px;
+            border: #ae7bff;
+            width: 190px;
+        }
+        .left{
+            padding-left: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <img src="https://www.andacademy.com/wp-content/themes/andacademy/pm/images/Header-desktop.jpg" alt="Image">
+            </div>
+            <div class="column">
+             <div class="left">
+                <h4 class="her" style="font-size: 47px; line-height: 52px; color: white; margin: 0; padding: 0;">Hi there! Welcome <br>  to AND Academy!</h4>
+                <p class="para" style="font-size: 26px; line-height: 31px; color: white;">Get ready to transform your design career with<br>
+                    our industry-relevant courses, expert mentorship,<br>
+                    project-based teaching and <u >job guarantee</u>.
+                 </p>
+                <p class="para" style="font-size: 26px; line-height: 31px; color: white;">Which of these are you looking for? </p>
+              
+                <div class="buttons">
+                    <button class="button">FULL-TIME COURSE</button>
+                    <button class="button">PART-TIME COURSE</button>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
